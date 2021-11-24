@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+html{
+   scroll-behavior: smooth; 
+}
+body {
+     font-family: 'Advent Pro',sans-serif;
+padding: 0%;
+margin: 0%;
+
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 2em;  
+}
+a {
+    text-decoration: none;
+    color: rgb(9, 10, 10);
+}
+/* ***************NAVBAR**************** */
+nav {
+   overflow: hidden;
+   background-color: rgba(182, 178, 182, 0.952);
+   position: fixed; 
+   width: 100%;
+   opacity: 0.9;  
+   margin: auto; 
+   flex-wrap: wrap;
+   align-items: center;
+}
+header li {
+    float: right;
+    font-size: 1.2em;
+}
+header li a {
+    text-decoration: none;  
+     display: flex;
+     text-align: center;
+     padding: 18px 16px;
+     align-items: center;
+     justify-content: space-around;
+}
+#logo {
+    font-family: 'Anton', sans-serif;
+      font-weight: bold;
+      float: left;
+}
+
+/* ************* IMAGE PRINCIPALE *********** */
+
+#imagePrincipale {
+    padding-top: 60px;
+    background: url(media/image-pr.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 1080px;
+
+}
+h1 {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 4em;
+    margin-top: 110px;
+    text-shadow: 1px 3px 2px pink;
+}
+#premierTrait {
+    height: 10px;
+    width: 50%;
+    margin: 20px auto;
+    background-color:b whitesmoke;
+    box-shadow: 1px 5px 0px pink;
+}
+h3 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 4em;
+    text-shadow: 1px 3px 2px pink;
+}
+/* ************ PRESENTATION **************** */
+#Presentation {
+    background-color: goldenrod;
+    padding: 10% 0% 8% 0%;
+}
+#texteIntro {
+    padding: 0px 20%;
+}
+#Prestation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 100px;
+}
+.imagesPrestation h4 {
+    font-family: 'Dancing Script' ;
+    text-align: center;
+    font-size: 1.9em;
+    margin: 20px;
+    font-weight: 1000;
+}
+.imagesPrestation img {
+border-radius: 20%;
+box-shadow: 5px 8px 4px black;
+}
+.imagesPrestation img:hover {
+    opacity: 0.5;
+    transform: scale(1.08);
+    transition:0.8s ease-in-out ;
+}
+/* ***************** TOURISME ********************** */
+
+#Tourisme {
+    height: 2000px;
+    background-color: rgb(132, 132, 153);
+    padding: 1px 2%;
+    
+}
+#Tourisme h2 {
+   padding-top: 60px;
+}
+#Ocean {
+    background: url(media/ocean.jpg);
+}
+#Chateau {
+    background: url(media/hotel.jpg);
+}
+#Phare {
+    background: url(media/phare.JPG);
+}
+#Vignoble {
+    background: url(media/vignes.jpg);
+
+}
+#Interieur {
+    background: url(media/vancouver.jpg);
+}
+#Piscine {
+    background: url(media/pool.jpg);
+}
+#Tourisme li {
+    margin: 65px 100px 0 100px;
+    height: 226px;
+    width: 55%;
+    max-width: 550px;
+    float: inherit;
+    box-shadow: 10px 10px 40px -5px black;
+    position:sticky;
+}
+#Tourisme p {
+    height: 45px;
+    width: 235px;
+    background-color: cornflowerblue;
+    float: right;
+    margin: 50px -180px 0 0;
+    font-size: 1.3em;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: 4px 4px 0 2px rgba(202, 73, 133, 0.959);
+}
+#Tourisme #Chateau, #Tourisme, {
+   float: right; 
+}
+#Chateau p, #Vignoble p, #Piscine p {
+    float: left;
+    background-color: cyan;
+    margin-left: -180px;
+    box-shadow: -4px 4px 0 1px blueviolet;
+}
+/********************** FOOTER ****************************/
+footer {
+    background-color: #524a3a;
+    color: white;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+form {
+    margin: 0 auto;
+    max-width: 900px;
+}
+input, textarea, button {
+    border: none;
+    width: 55%;
+    padding: 15px 15px;
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-family: 'advent Pro';
+    border-radius: 8px;
+}
+textarea {
+    height: 150px;
+}
+button {
+    font-size: 1.5em;
+    background-color: rgb(109, 166, 204);
+}
+button:hover {
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+    transition: o.5s ease-in-out;
+}
+#deuxiemeTrait {
+    height: 4px;
+    width: 80%;
+    background-color: white;
+    margin: 60px auto;
+}
+#copyrightEtIcons {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 10%;
+}
+#copyright {
+    width: 50%;
+    text-align: left;
+    color: white;
+}
+
+@media screen and (max-width: 885px) {
+
+    nav{
+        text-align: center;
+    }
+    #logo{
+        padding: 2rem;
+    }
